@@ -1,38 +1,41 @@
-<section class="section">
-    <form class="feedback-form js-feedback-form" autocomplete="off">
-        <label class="feedback-form-label">
-            Email
-            <input class="feedback-form-input" type="email" name="email" autofocus />
-        </label>
-        <label class="feedback-form-label">
-            Message
-            <textarea class="feedback-form-textarea" name="message" rows="8"></textarea>
-        </label>
-        <button class="feedback-form-btn" type="submit">Submit</button>
-    </form>
-</section>
-
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My homework 9</title>
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <form class="feedback-form" autocomplete="off">
+      <label class="email-label" for="user-email">Email</label>
+      <input
+        class="email-input"
+        type="email"
+        name="email"
+        id="user-email"
+        autofocus
+      />
+      <label class="message-label" for="user-message">Message</label>
+      <textarea
+        class="textarea-input"
+        name="message"
+        id="user-message"
+        rows="8"
+      ></textarea>
+      <button class="submit-btn" type="submit">Submit</button>
+    </form>
 
     <script type="module" src="./js/2-form.js"></script>
-</head>
-
-<body>
-    <p><a href="./index.html">Go back</a></p>
-
-    <main>
-        <section class="section">
-            <ul class="gallery js-gallery"></ul>
-        </section>
-    </main>
-</body>
-
+  </body>
 </html>
